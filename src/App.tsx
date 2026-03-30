@@ -35,6 +35,36 @@ export default function App() {
         <div className="hero-scroll">Role para ver</div>
       </section>
 
+      {/* VIDEO SECTION */}
+      <section style={{ background: '#080808', padding: '80px 0' }}>
+        <div className="wrap">
+          <div style={{ textAlign: 'center', marginBottom: '32px' }}>
+            <span style={{ 
+              fontSize: '10px', 
+              textTransform: 'uppercase', 
+              letterSpacing: '0.2em', 
+              color: 'var(--amber)',
+              fontWeight: 600,
+              display: 'block'
+            }}>
+              O método em prática
+            </span>
+          </div>
+          <div style={{ maxWidth: '480px', margin: '0 auto', border: '1px solid rgba(196,98,10,0.2)', overflow: 'hidden' }}>
+            <div style={{ padding: '177.78% 0 0 0', position: 'relative' }}>
+              <iframe 
+                src="https://player.vimeo.com/video/1176647278?badge=0&autopause=0&player_id=0&app_id=58479" 
+                frameBorder="0" 
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                referrerPolicy="strict-origin-when-cross-origin" 
+                style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} 
+                title="VIDEO - HEADER - OMM -SITE"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* PROBLEMA */}
       <section className="section">
         <div className="wrap">
@@ -302,7 +332,12 @@ export default function App() {
           <div className="cta-contact">
             <div className="cta-name">Miguel Macedo</div>
             <div className="cta-role">Filmmaker Estratégico · OMM · Piratininga SP</div>
-            <div className="cta-phone">@omacedomiguel</div>
+            <div className="cta-phone">
+              <a href="https://wa.me/5514991137404" target="_blank" rel="noopener noreferrer" className="cta-whatsapp-btn">
+                WHATSAPP
+              </a>
+              <span className="cta-handle">@omacedomiguel</span>
+            </div>
           </div>
         </div>
       </section>
